@@ -56,23 +56,25 @@ if (amysBirthYear === brittanisBirthYear) {
 */
 
 //CODE HERE
-let temperature = 90;
+let temperature = 50;
 let rain = false;
+let x = 0
+//console.log(1<x)
 
 switch(temperature, rain) {
   case temperature>=80 && rain:
     console.log('tshirt, shorts, umbrella')
     break;
-  case 60<=temperature<80 && rain:
+  case 60<=temperature && temperature<80 && rain:
     console.log('sweatshirt, slacks, umbrella')
     break;
   case temperature<60 && rain:
     console.log('jacket, slacks, umbrella')
     break;
-  case temperature>=80 && rain = false:
+  case temperature>=80 && !rain:
     console.log('tshirt, shorts, sombrero')
     break;
-  case 60<=temperature<80 && !rain:
+  case 60<=temperature && temperature<80 && !rain:
     console.log('sweatshirt, shorts, bandana')
     break;
   case temperature<60 && !rain:
@@ -86,13 +88,19 @@ switch(temperature, rain) {
 */
 
 //CODE HERE
-
+for (let j=0; j<10; j++) {
+  console.log('hello')
+}
 ////////// PROBLEM 6 //////////
 
 /*
   Create a for-loop that runs 10 times, logging the numbers 1 through 10. Ex, on the first iteration it would log 1, on the second iteration it would log 2.
 */
-
+let count = 1
+for (let h=0; h<10; h++) {
+  console.log(count)
+  count++
+}
 //CODE HERE
 
 ////////// PROBLEM 7 //////////
@@ -102,7 +110,11 @@ switch(temperature, rain) {
 */
 
 //CODE HERE
-
+let count2 = 10
+for (let h=0; h<10; h++) {
+  console.log(count2)
+  count2--
+}
 
 ////////// PROBLEM 8 //////////
 
@@ -114,7 +126,11 @@ let passingScore = 7;
 */
 
 //CODE HERE
-
+while (score<passingScore) {
+  console.log('Your score is not high enough')
+  score+=1
+}
+console.log('Your score is FINALLY high enough')
 ////////// INTERMEDIATE PROBLEMS //////////
 
 ////////// PROBLEM 9 //////////
@@ -125,17 +141,32 @@ let passingScore = 7;
 */
 
 //CODE HERE
+let changeMyMind = true
 
+if (changeMyMind) {
+  changeMyMind = !changeMyMind
+  console.log(changeMyMind)
+} else {
+  changeMyMind = !changeMyMind
+  console.log(changeMyMind)
+}
 ////////// PROBLEM 10 //////////
 // Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
 
 //CODE HERE
-
+changeMyMind = !changeMyMind
+console.log(changeMyMind)
 ////////// ADVANCED PROBLEMS //////////
 
 ////////// PROBLEM 11 //////////
 
-let z = 5;
+let z = 6;
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+while (z>0) {
+  for (let i=z; i>0; i--) {
+    console.log(i)
+  }
+  z--
+}
