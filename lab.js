@@ -56,30 +56,29 @@ if (amysBirthYear === brittanisBirthYear) {
 */
 
 //CODE HERE
-let temperature = 50;
-let rain = false;
+let temperature = 62;
+let rain = true;
 let x = 0
 //console.log(1<x)
 
-switch(temperature, rain) {
-  case temperature>=80 && rain:
-    console.log('tshirt, shorts, umbrella')
-    break;
-  case 60<=temperature && temperature<80 && rain:
-    console.log('sweatshirt, slacks, umbrella')
-    break;
-  case temperature<60 && rain:
-    console.log('jacket, slacks, umbrella')
-    break;
-  case temperature>=80 && !rain:
-    console.log('tshirt, shorts, sombrero')
-    break;
-  case 60<=temperature && temperature<80 && !rain:
-    console.log('sweatshirt, shorts, bandana')
-    break;
-  case temperature<60 && !rain:
-    console.log('sweatshirt, slacks')
-    break;
+
+if (temperature>=80 && rain) {
+  console.log('tshirt, shorts, umbrella')
+}
+if (60<=temperature && temperature<80 && rain) {
+  console.log('sweatshirt, slacks, umbrella')
+}
+if (temperature<60 && rain) {
+  console.log('jacket, slacks, umbrella')
+}
+if (temperature>=80 && !rain) {
+  console.log('tshirt, shorts, sombrero')
+}
+if (60<=temperature && temperature<80 && !rain) {
+  console.log('sweatshirt, shorts, bandana')
+}
+if (temperature<60 && !rain) {
+  console.log('sweatshirt, slacks')
 }
 ////////// PROBLEM 5 //////////
 
